@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{98324f92-3f5b-40af-80ea-a65c3a2f30f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support\Custom UI">
+      <UniqueIdentifier>{0063e112-05bc-42b2-8240-f49016eae6c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Doc">
+      <UniqueIdentifier>{057e4697-0b93-4bea-af10-42e38d6c2cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{09b8e390-7646-4ab1-a634-23f874977b74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="..\IDA_Custom_UI\IDA_WaitEx\WaitBoxEx.h">
+      <Filter>Support\Custom UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IDA_Custom_UI\IDA_SegmentSelect\SegSelect.h">
+      <Filter>Support\Custom UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="IDA_MarkRefCount_PlugIn.txt">
+      <Filter>Doc</Filter>
+    </Text>
+    <Text Include="Oldstuff.txt">
+      <Filter>Doc</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="magic.wav">
+      <Filter>Resources</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
